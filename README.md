@@ -40,21 +40,21 @@ Both datasets contained the following columns:
   
 
 ### DATA PRE-PROCESSING
-The datasets were downloaded into a local repository dedicated to the project.  
-After library packages were loaded, the datasets were loaded in separate dataframes.  
-The first dataset (dn1) was pre-processed by extracting the state record for each row from  
+The datasets were downloaded to a local repository dedicated to this project.  
+After library packages were loaded, the datasets were loaded onto separate dataframes.  
+The first dataset (dn1) was pre-processed by extracting the state record of each row from  
 the original 'place_with_parent_names' column.  
-The 'region' column was separated by a space character so that the records could be readable.  
+Records in the 'region' column were separated by a space character to enhance readability.  
 The 'lat' and 'lon' columns were created based on the original 'lat-lon' column.  
 The original 'price_usd' column which was in 'object' data type was first stripped of special  
-characters like trailing white spaces, the dollar ($) symbol, with the resulting information  
-converted to float data type which is appropriate for currency records, and then multiplied  
-that outcome by the USD/BRL (approximate) exchange rate of 6.20. The product was rounded to two (2)  
-decimal places.
-The only pre-processing conducted on the second dataset contained in 'dn2' was separating  
-singularized records by a space.
+characters like trailing white spaces, the dollar ($) symbol, and commas (,), with the resulting  
+information converted to 'float' data type which is appropriate for currency records, and then the  
+result was further multiplied by the USD/BRL (approximate) exchange rate of 6.20. The product was  
+rounded to two (2) decimal places.
+The only pre-processing conducted on the second dataset (contained in the dataframe 'dn2') was  
+separating singularized/contracted records with a space for readability.
 After the above processes were done. a copy of the dataframes 'dn1' and 'dn2' with select columns were  
-created, and then concatenated into just one (1) dataframe 'dn'.
+created as dataframes 'df1' and 'df2', and then concatenated into just one (1) dataframe 'dn'.
 
 ### DATA CLEANING
 The 'dn' dataframe was cleaned by dropping duplicated records.  
@@ -122,6 +122,8 @@ North leading in Industry and mining, property values are increasing to meet the
 In all, we have discovered that property prices increase with property sizes, and that political and  
 socio-economic factors influence property values across regions and states in Brazil.
 
+#### APPRECIATION
+I would like to specially appreciate [Mr Dada Dayo](https://github.com/Deewhy254) for making this project possible.
 
 #### AUTHOR
 [Etebom Ntuk](https://github.com/netebom)

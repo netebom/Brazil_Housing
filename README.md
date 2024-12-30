@@ -121,3 +121,7 @@ North leading in Industry and mining, property values are increasing to meet the
 
 In all, we have discovered that property prices increase with property sizes, and that political and  
 socio-economic factors influence property values across regions and states in Brazil.
+
+
+#### AUTHOR
+[Etebom Ntuk](https://github.com/netebom)
